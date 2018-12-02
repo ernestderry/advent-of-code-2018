@@ -16,20 +16,3 @@ def calcSimilarBoxIds(boxIds):
                 break
         letterIndex += 1
     return similarBoxId
-
-boxIds = []
-boxIds.append("abcde")
-boxIds.append("fghij")
-boxIds.append("klmno")
-boxIds.append("pqrst")
-boxIds.append("fguij")
-boxIds.append("axcye")
-boxIds.append("wvxyz")
-print (calcSimilarBoxIds(boxIds) == "fgij")
-
-boxIds = []
-f = open("python/day2a/puzzle.txt", "r")
-for line in f:
-    boxIds.append(line)
-
-print ("answer " + str(calcSimilarBoxIds(boxIds)))
