@@ -4,7 +4,7 @@ def assertEquals(testId, expected, actual):
     if expected == actual:
         print(str(testId) + " - pass")
     else:
-        print(str(testId) + " - FAIL - expecting " + str(a) + " but got " + str(b))
+        print(str(testId) + " - FAIL - expecting " + str(expected) + " but got " + str(actual))
 
 boxIds = []
 boxIds.append("abcde")
