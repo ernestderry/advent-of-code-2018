@@ -55,9 +55,9 @@ claims.append("#1 @ 10,10: 5x5")
 claims.append("#2 @ 12,12: 5x5")
 assertEquals(10, 9, main.calcOverlaps(claims))
 
-f = open("c:\\git\\advent-of-code-2018\\python\\day3a\\puzzle.txt", "r")
+f = open("c:\\git\\advent-of-code-2018\\python\\day3b\\puzzle.txt", "r")
 claims = []
 for line in f:
     claims.append(line)
 
-print("answer is " + str(main.calcOverlaps(claims)))
+print("answer is " + str(main.findFirstNonOverlappingClaim(claims)))
