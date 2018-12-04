@@ -31,7 +31,7 @@ boxIds.append("ababab")
 assertEquals(4, 12, main.calcChecksum(boxIds))
 
 boxIds = []
-f = open("python/day2a/puzzle.txt", "r")
+f = open("c:\\git\\advent-of-code-2018\\python\\day2a\\puzzle.txt", "r")
 for line in f:
     boxIds.append(line)
 

@@ -17,7 +17,7 @@ boxIds.append("wvxyz")
 assertEquals(1, "fgij", main.calcSimilarBoxIds(boxIds))
 
 boxIds = []
-f = open("python/day2a/puzzle.txt", "r")
+f = open("c:\\git\\advent-of-code-2018\\python\\day2b\\puzzle.txt", "r")
 for line in f:
     boxIds.append(line)
 
