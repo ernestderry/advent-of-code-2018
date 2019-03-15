@@ -5,22 +5,23 @@ def processReactions(polymer):
 
     polymerChanged = True
     while polymerChanged:
+        polymerChanged = False
         polymerLength = len(polymer)
         unitPos = 0
         unitsReactPos = -1
-        while unitPos < polymerLength and unitsReactPos < 0:
+        newPolymer = ""
+        while unitPos <= polymerLength-1:
             unit1 = polymer[unitPos : unitPos + 1]
             unit2 = polymer[unitPos + 1 : unitPos + 2]
 
             if unitsReact(unit1, unit2):
-                unitsReactPos = unitPos
+                newPolymer += ""
+                polymerChanged = True
+                unitPos += 2
+            else:
+                newPolymer += unit1
+                unitPos += 1
 
-            unitPos += 1
-
-        if unitsReactPos >= 0:
-            polymer = polymer[0:unitsReactPos] + polymer[unitsReactPos+2:]
-            polymerChanged = True
-        else:
-            polymerChanged = False
+        polymer = newPolymer
 
     return polymer
