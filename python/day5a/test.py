@@ -34,7 +34,6 @@ assertEquals(14, "E", main.processReactions("aAEBcCb"))
 
 assertEquals(15, "dabCBAcaDA", main.processReactions("dabAcCaCBAcCcaDA"))
 
-
 f = open("c:\\git\\advent-of-code-2018\\python\\day5a\\puzzle.txt", "r")
-for line in f:
-    print ("answer is " + str(len(main.processReactions(line))))
+line = f.readline()
+print ("answer is " + str(len(main.processReactions(line))))
