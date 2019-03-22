@@ -15,7 +15,6 @@ def processReactions(polymer):
             unit2 = polymer[unitPos + 1 : unitPos + 2]
 
             if unitsReact(unit1, unit2):
-                newPolymer += ""
                 polymerChanged = True
                 unitPos += 2
             else:

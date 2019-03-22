@@ -30,7 +30,9 @@ assertEquals(11, "BBBBBBZZZZZZ", main.processReactions("BBBBBBAaZZZZZZ"))
 
 assertEquals(12, "", main.processReactions("aAaA"))
 
-assertEquals(13, "dabCBAcaDA", main.processReactions("dabAcCaCBAcCcaDA"))
+assertEquals(14, "E", main.processReactions("aAEBcCb"))
+
+assertEquals(15, "dabCBAcaDA", main.processReactions("dabAcCaCBAcCcaDA"))
 
 
 f = open("c:\\git\\advent-of-code-2018\\python\\day5a\\puzzle.txt", "r")
